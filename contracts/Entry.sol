@@ -4,7 +4,7 @@ contract Entry {
     string description;
     string[] prescribedMedications;
 
-    function getCurrentTime() internal view returns(uint) {
+    function getCurrentTime() public view returns(uint) {
         return now;
     }
 }

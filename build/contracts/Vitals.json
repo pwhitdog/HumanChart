@@ -1,0 +1,572 @@
+{
+  "contractName": "Vitals",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getCurrentTime",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"getCurrentTime\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/pwhitdog/code/HumanChart/contracts/EntryTypes/Vitals.sol\":\"Vitals\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/pwhitdog/code/HumanChart/contracts/Entry.sol\":{\"keccak256\":\"0x448faf191a8ae185577ffbc6d73e940d698ea0299aeedb1c4a4681a86bd3b02f\",\"urls\":[\"bzz-raw://655161feec95179d4cf06c90d2c5ca133269abc66de4a79ae3d7e4c03d1c7d40\",\"dweb:/ipfs/QmRJkt19E6WZevpdrbL6g1NnkhV1BQBEhUHGdzjVxLLrPN\"]},\"/home/pwhitdog/code/HumanChart/contracts/EntryTypes/Vitals.sol\":{\"keccak256\":\"0xaf0baecff5732c930b84ad1a41b08338b01c53b7632adcb67b0c805166fe887b\",\"urls\":[\"bzz-raw://904a33b17de1cfe4d39dcb4fd168cbbabd26852327a27b4f5201d19beba84b87\",\"dweb:/ipfs/QmbPsbfySuc8h4saHqkJxx6jAFmeF17nsQxGeFz6hQtZ3k\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040518060400160405280600681526020017f566974616c7300000000000000000000000000000000000000000000000000008152506000908051906020019061005c929190610082565b5061006f61007a60201b6100491760201c565b600281905550610127565b600042905090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100c357805160ff19168380011785556100f1565b828001600101855582156100f1579182015b828111156100f05782518255916020019190600101906100d5565b5b5090506100fe9190610102565b5090565b61012491905b80821115610120576000816000905550600101610108565b5090565b90565b6086806101356000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806329cb924d14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b60004290509056fea265627a7a723158200ba9b8c06ef418048a8f21569b0982ec9bbf31a216ce68b38369ef01fb3a15fd64736f6c634300050c0032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806329cb924d14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b60004290509056fea265627a7a723158200ba9b8c06ef418048a8f21569b0982ec9bbf31a216ce68b38369ef01fb3a15fd64736f6c634300050c0032",
+  "sourceMap": "49:147:2:-;;;95:99;8:9:-1;5:2;;;30:1;27;20:12;5:2;95:99:2;126:22;;;;;;;;;;;;;;;;;:11;:22;;;;;;;;;;;;:::i;:::-;;165;:20;;;;;:22;;:::i;:::-;158:4;:29;;;;49:147;;108:79:1;154:4;177:3;170:10;;108:79;:::o;49:147:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "49:147:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;49:147:2;;;;;;;;;;;;;;;;;;;108:79:1;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;154:4;177:3;170:10;;108:79;:::o",
+  "source": "pragma solidity ^0.5.11;\nimport \"../Entry.sol\";\n\ncontract Vitals is Entry{\n    uint date;\n\n    constructor() public {\n        description = \"Vitals\";\n        date = Entry.getCurrentTime();\n    }\n}",
+  "sourcePath": "/home/pwhitdog/code/HumanChart/contracts/EntryTypes/Vitals.sol",
+  "ast": {
+    "absolutePath": "/home/pwhitdog/code/HumanChart/contracts/EntryTypes/Vitals.sol",
+    "exportedSymbols": {
+      "Vitals": [
+        60
+      ]
+    },
+    "id": 61,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 40,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "absolutePath": "/home/pwhitdog/code/HumanChart/contracts/Entry.sol",
+        "file": "../Entry.sol",
+        "id": 41,
+        "nodeType": "ImportDirective",
+        "scope": 61,
+        "sourceUnit": 39,
+        "src": "25:22:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 42,
+              "name": "Entry",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 38,
+              "src": "68:5:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Entry_$38",
+                "typeString": "contract Entry"
+              }
+            },
+            "id": 43,
+            "nodeType": "InheritanceSpecifier",
+            "src": "68:5:2"
+          }
+        ],
+        "contractDependencies": [
+          38
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 60,
+        "linearizedBaseContracts": [
+          60,
+          38
+        ],
+        "name": "Vitals",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 45,
+            "name": "date",
+            "nodeType": "VariableDeclaration",
+            "scope": 60,
+            "src": "79:9:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 44,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "79:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 58,
+              "nodeType": "Block",
+              "src": "116:78:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 50,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 48,
+                      "name": "description",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 26,
+                      "src": "126:11:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "566974616c73",
+                      "id": 49,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "140:8:2",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_b06dfc0b537c8beedbe01fbc6a40ed3c746e92ee2d4aaab77f39d95d06ed945a",
+                        "typeString": "literal_string \"Vitals\""
+                      },
+                      "value": "Vitals"
+                    },
+                    "src": "126:22:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 51,
+                  "nodeType": "ExpressionStatement",
+                  "src": "126:22:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 56,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 52,
+                      "name": "date",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 45,
+                      "src": "158:4:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 53,
+                          "name": "Entry",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 38,
+                          "src": "165:5:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_Entry_$38_$",
+                            "typeString": "type(contract Entry)"
+                          }
+                        },
+                        "id": 54,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "getCurrentTime",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 37,
+                        "src": "165:20:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
+                          "typeString": "function () view returns (uint256)"
+                        }
+                      },
+                      "id": 55,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "165:22:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "158:29:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 57,
+                  "nodeType": "ExpressionStatement",
+                  "src": "158:29:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 59,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 46,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "106:2:2"
+            },
+            "returnParameters": {
+              "id": 47,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "116:0:2"
+            },
+            "scope": 60,
+            "src": "95:99:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 61,
+        "src": "49:147:2"
+      }
+    ],
+    "src": "0:196:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/pwhitdog/code/HumanChart/contracts/EntryTypes/Vitals.sol",
+    "exportedSymbols": {
+      "Vitals": [
+        60
+      ]
+    },
+    "id": 61,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 40,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "absolutePath": "/home/pwhitdog/code/HumanChart/contracts/Entry.sol",
+        "file": "../Entry.sol",
+        "id": 41,
+        "nodeType": "ImportDirective",
+        "scope": 61,
+        "sourceUnit": 39,
+        "src": "25:22:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 42,
+              "name": "Entry",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 38,
+              "src": "68:5:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Entry_$38",
+                "typeString": "contract Entry"
+              }
+            },
+            "id": 43,
+            "nodeType": "InheritanceSpecifier",
+            "src": "68:5:2"
+          }
+        ],
+        "contractDependencies": [
+          38
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 60,
+        "linearizedBaseContracts": [
+          60,
+          38
+        ],
+        "name": "Vitals",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 45,
+            "name": "date",
+            "nodeType": "VariableDeclaration",
+            "scope": 60,
+            "src": "79:9:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 44,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "79:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 58,
+              "nodeType": "Block",
+              "src": "116:78:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 50,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 48,
+                      "name": "description",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 26,
+                      "src": "126:11:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "566974616c73",
+                      "id": 49,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "140:8:2",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_b06dfc0b537c8beedbe01fbc6a40ed3c746e92ee2d4aaab77f39d95d06ed945a",
+                        "typeString": "literal_string \"Vitals\""
+                      },
+                      "value": "Vitals"
+                    },
+                    "src": "126:22:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 51,
+                  "nodeType": "ExpressionStatement",
+                  "src": "126:22:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 56,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 52,
+                      "name": "date",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 45,
+                      "src": "158:4:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 53,
+                          "name": "Entry",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 38,
+                          "src": "165:5:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_Entry_$38_$",
+                            "typeString": "type(contract Entry)"
+                          }
+                        },
+                        "id": 54,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "getCurrentTime",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 37,
+                        "src": "165:20:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
+                          "typeString": "function () view returns (uint256)"
+                        }
+                      },
+                      "id": 55,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "165:22:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "158:29:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 57,
+                  "nodeType": "ExpressionStatement",
+                  "src": "158:29:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 59,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 46,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "106:2:2"
+            },
+            "returnParameters": {
+              "id": 47,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "116:0:2"
+            },
+            "scope": 60,
+            "src": "95:99:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 61,
+        "src": "49:147:2"
+      }
+    ],
+    "src": "0:196:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.19",
+  "updatedAt": "2019-12-05T21:21:38.065Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
