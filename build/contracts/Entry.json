@@ -17,25 +17,25 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getCurrentTime\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/pwhitdog/code/HumanChart/contracts/Entry.sol\":\"Entry\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/pwhitdog/code/HumanChart/contracts/Entry.sol\":{\"keccak256\":\"0x448faf191a8ae185577ffbc6d73e940d698ea0299aeedb1c4a4681a86bd3b02f\",\"urls\":[\"bzz-raw://655161feec95179d4cf06c90d2c5ca133269abc66de4a79ae3d7e4c03d1c7d40\",\"dweb:/ipfs/QmRJkt19E6WZevpdrbL6g1NnkhV1BQBEhUHGdzjVxLLrPN\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b5060868061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806329cb924d14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b60004290509056fea265627a7a723158205b9a3e98b9b49e6216d0a7e7698c359b2356e69bf297a4dfaec02f17b4cadf6164736f6c634300050c0032",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806329cb924d14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b60004290509056fea265627a7a723158205b9a3e98b9b49e6216d0a7e7698c359b2356e69bf297a4dfaec02f17b4cadf6164736f6c634300050c0032",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getCurrentTime\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/paulwhitmer/Projects/HumanChart/contracts/Entry.sol\":\"Entry\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/paulwhitmer/Projects/HumanChart/contracts/Entry.sol\":{\"keccak256\":\"0x448faf191a8ae185577ffbc6d73e940d698ea0299aeedb1c4a4681a86bd3b02f\",\"urls\":[\"bzz-raw://655161feec95179d4cf06c90d2c5ca133269abc66de4a79ae3d7e4c03d1c7d40\",\"dweb:/ipfs/QmRJkt19E6WZevpdrbL6g1NnkhV1BQBEhUHGdzjVxLLrPN\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b5060868061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806329cb924d14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b60004290509056fea265627a7a72315820e573a3e79230d92abbb5684fb86de40e46845d573d148d44b07834582197926164736f6c634300050c0032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806329cb924d14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b60004290509056fea265627a7a72315820e573a3e79230d92abbb5684fb86de40e46845d573d148d44b07834582197926164736f6c634300050c0032",
   "sourceMap": "26:163:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:163:1;;;;;;;",
   "deployedSourceMap": "26:163:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:163:1;;;;;;;;;;;;;;;;;;;108:79;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;154:4;177:3;170:10;;108:79;:::o",
   "source": "pragma solidity ^0.5.11;\n\ncontract Entry {\n    string description;\n    string[] prescribedMedications;\n\n    function getCurrentTime() public view returns(uint) {\n        return now;\n    }\n}",
-  "sourcePath": "/home/pwhitdog/code/HumanChart/contracts/Entry.sol",
+  "sourcePath": "/Users/paulwhitmer/Projects/HumanChart/contracts/Entry.sol",
   "ast": {
-    "absolutePath": "/home/pwhitdog/code/HumanChart/contracts/Entry.sol",
+    "absolutePath": "/Users/paulwhitmer/Projects/HumanChart/contracts/Entry.sol",
     "exportedSymbols": {
       "Entry": [
-        38
+        91
       ]
     },
-    "id": 39,
+    "id": 92,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 24,
+        "id": 77,
         "literals": [
           "solidity",
           "^",
@@ -51,19 +51,19 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 38,
+        "id": 91,
         "linearizedBaseContracts": [
-          38
+          91
         ],
         "name": "Entry",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 26,
+            "id": 79,
             "name": "description",
             "nodeType": "VariableDeclaration",
-            "scope": 38,
+            "scope": 91,
             "src": "47:18:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -72,7 +72,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 25,
+              "id": 78,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "47:6:1",
@@ -86,10 +86,10 @@
           },
           {
             "constant": false,
-            "id": 29,
+            "id": 82,
             "name": "prescribedMedications",
             "nodeType": "VariableDeclaration",
-            "scope": 38,
+            "scope": 91,
             "src": "71:30:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -99,7 +99,7 @@
             },
             "typeName": {
               "baseType": {
-                "id": 27,
+                "id": 80,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
                 "src": "71:6:1",
@@ -108,7 +108,7 @@
                   "typeString": "string"
                 }
               },
-              "id": 28,
+              "id": 81,
               "length": null,
               "nodeType": "ArrayTypeName",
               "src": "71:8:1",
@@ -122,54 +122,54 @@
           },
           {
             "body": {
-              "id": 36,
+              "id": 89,
               "nodeType": "Block",
               "src": "160:27:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 34,
+                    "id": 87,
                     "name": "now",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 134,
+                    "referencedDeclaration": 187,
                     "src": "177:3:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 33,
-                  "id": 35,
+                  "functionReturnParameters": 86,
+                  "id": 88,
                   "nodeType": "Return",
                   "src": "170:10:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 37,
+            "id": 90,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getCurrentTime",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 30,
+              "id": 83,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "131:2:1"
             },
             "returnParameters": {
-              "id": 33,
+              "id": 86,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 32,
+                  "id": 85,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 37,
+                  "scope": 90,
                   "src": "154:4:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -178,7 +178,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 31,
+                    "id": 84,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "154:4:1",
@@ -193,31 +193,31 @@
               ],
               "src": "153:6:1"
             },
-            "scope": 38,
+            "scope": 91,
             "src": "108:79:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 39,
+        "scope": 92,
         "src": "26:163:1"
       }
     ],
     "src": "0:189:1"
   },
   "legacyAST": {
-    "absolutePath": "/home/pwhitdog/code/HumanChart/contracts/Entry.sol",
+    "absolutePath": "/Users/paulwhitmer/Projects/HumanChart/contracts/Entry.sol",
     "exportedSymbols": {
       "Entry": [
-        38
+        91
       ]
     },
-    "id": 39,
+    "id": 92,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 24,
+        "id": 77,
         "literals": [
           "solidity",
           "^",
@@ -233,19 +233,19 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 38,
+        "id": 91,
         "linearizedBaseContracts": [
-          38
+          91
         ],
         "name": "Entry",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 26,
+            "id": 79,
             "name": "description",
             "nodeType": "VariableDeclaration",
-            "scope": 38,
+            "scope": 91,
             "src": "47:18:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -254,7 +254,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 25,
+              "id": 78,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "47:6:1",
@@ -268,10 +268,10 @@
           },
           {
             "constant": false,
-            "id": 29,
+            "id": 82,
             "name": "prescribedMedications",
             "nodeType": "VariableDeclaration",
-            "scope": 38,
+            "scope": 91,
             "src": "71:30:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -281,7 +281,7 @@
             },
             "typeName": {
               "baseType": {
-                "id": 27,
+                "id": 80,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
                 "src": "71:6:1",
@@ -290,7 +290,7 @@
                   "typeString": "string"
                 }
               },
-              "id": 28,
+              "id": 81,
               "length": null,
               "nodeType": "ArrayTypeName",
               "src": "71:8:1",
@@ -304,54 +304,54 @@
           },
           {
             "body": {
-              "id": 36,
+              "id": 89,
               "nodeType": "Block",
               "src": "160:27:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 34,
+                    "id": 87,
                     "name": "now",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 134,
+                    "referencedDeclaration": 187,
                     "src": "177:3:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 33,
-                  "id": 35,
+                  "functionReturnParameters": 86,
+                  "id": 88,
                   "nodeType": "Return",
                   "src": "170:10:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 37,
+            "id": 90,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getCurrentTime",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 30,
+              "id": 83,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "131:2:1"
             },
             "returnParameters": {
-              "id": 33,
+              "id": 86,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 32,
+                  "id": 85,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 37,
+                  "scope": 90,
                   "src": "154:4:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -360,7 +360,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 31,
+                    "id": 84,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "154:4:1",
@@ -375,14 +375,14 @@
               ],
               "src": "153:6:1"
             },
-            "scope": 38,
+            "scope": 91,
             "src": "108:79:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 39,
+        "scope": 92,
         "src": "26:163:1"
       }
     ],
@@ -392,9 +392,17 @@
     "name": "solc",
     "version": "0.5.12+commit.7709ece9.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x08f8953238cdbdcf69b52dae78c5120506FC141e",
+      "transactionHash": "0x30c35cbad26be8dafd28c61a2026ff546105a6a039a7c15e85eef4a93362691c"
+    }
+  },
   "schemaVersion": "3.0.19",
-  "updatedAt": "2019-12-05T21:21:38.064Z",
+  "updatedAt": "2019-12-06T22:18:27.199Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
