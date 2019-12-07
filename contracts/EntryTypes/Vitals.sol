@@ -5,7 +5,7 @@ contract Vitals is Entry{
     uint date;
 
     constructor() public {
-        description = "Vitals";
-        date = Entry.getCurrentTime();
+        _description = "Vitals";
+        // date = Entry.getCurrentTime();
     }
 }
