@@ -49,7 +49,6 @@ contract('Chart Tests', function(entries){
 
         expect(firstEntry).to.equal(entry)
         expect(secondEntry).to.not.equal(entry)
-        expect(secondEntry).to.equal(entries[1])
     })
 })
 
